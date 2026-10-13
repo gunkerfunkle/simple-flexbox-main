@@ -1,0 +1,73 @@
+*{
+    margin: 0;   
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+header {
+    background-color: burlywood;
+    padding: 1rem;
+    text-align: center;
+}
+footer{
+    background-color: aqua;
+    padding: 0.5rem;
+    text-align: center;
+}
+#row {
+    /* use flexbox on parent div to layout a row or column of child divs */
+    display: flex;
+ /* use row for desktop and tablet, column for mobile */
+    flex-direction: row;
+    /* use flex wrap to create extra rows when needed - ie tablet layout */
+    flex-wrap: wrap;
+}
+.column{
+    /*flex 1 sets flex-grow to 1, flex-shrink to 1 and flex-basis to 1. all children should be equally sized and equally distributed */
+    flex:1;
+}
+img{
+    width: 100%;
+}
+    #col1{
+        background-color: lightblue;
+    }
+
+    #col2{
+        background-color: lightgreen;
+    }
+
+    #col3{
+        background-color: lightyellow;
+    }
+
+    #col4{
+        background-color: lightcoral;
+    }
+
+    #col5{
+        background-color: lightpink;
+    }
+    /*Media Queries */
+    /* break point for tablets */
+    @media screen and (max-width: 600px){
+        .column{
+            min-width: 50%;
+        }
+    }
+    /* break point for mobile */
+    @media screen and (max-width: 400px){
+        #row {
+            flex-direction: column;
+        }
+    }
