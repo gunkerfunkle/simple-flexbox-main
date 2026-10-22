@@ -3,24 +3,35 @@
     box-sizing: border-box;
 }
 h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'pixellify-sans-bold', sans-serif;
     font-size: 3rem;
+    color: white;
 }
+
+h2{
+    font-family: 'pixellify-sans-bold', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background-color: white;;
+    padding: 0.5rem;
+}
+
 h4{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'pixellify-sans-bold', sans-serif;
     font-size: 1.5rem;
 }
 p{
     font-family: 'pixellify-sans-regular', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 1);
 }
 header {
-    background-color: burlywood;
-    padding: 1rem;
+    background-color: black;
     text-align: center;
 }
 footer{
-    background-color: aqua;
+    background-color: black;
     padding: 0.5rem;
     text-align: center;
 }
@@ -35,24 +46,25 @@ footer{
 .column{
     /*flex 1 sets flex-grow to 1, flex-shrink to 1 and flex-basis to 1. all children should be equally sized and equally distributed */
     flex:1;
+    padding: 10px;
 }
 img{
     width: 100%;
 }
     #col1{
-        background-color: lightblue;
+        background-color: #00598E;
     }
 
     #col2{
-        background-color: lightgreen;
+        background-color: #FFB227;
     }
 
     #col3{
-        background-color: lightyellow;
+        background-color: #00598E;
     }
 
     #col4{
-        background-color: lightcoral;
+        background-color: #FFB227;
     }
 
     #col5{
@@ -70,4 +82,18 @@ img{
         #row {
             flex-direction: column;
         }
+    }
+
+    .pixelify-sans-regular {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+        .pixelify-sans-bold {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
     }
